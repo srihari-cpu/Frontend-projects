@@ -1,0 +1,32 @@
+body{
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+    background-color: aqua;
+}
+.main{
+    margin: 50px 450px;
+}
+#main-heading{
+    text-align: center;
+}
+
+button{
+    height: 35px;
+    width: 80px;
+    background-color: rgb(150, 0, 0);
+    border-radius: 8px;
+    border-style: none;
+    
+} 
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 170px 134px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    /* align-items: center; */
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body{
+            margin-top: 200px;
+            text-align: center;
+            background-image:url("https://wallpaperaccess.com/full/3468697.jpg");
+            background-size: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        h1{
+            color: #2e2ee0;
+        }
+        button{
+            margin: 5px;
+            height: 40px;
+            width: 80px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #780116;
+            color: white;
+        }
+        button:hover{
+            background-color: #1b89e4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bat, Ball & Stump Game</h1>
+    <button onclick="
+    var option=['bat','ball','stumps'];
+    var randomNumber=Math.floor(Math.random()*3);
+    var value=option[randomNumber];
+    if(value ==='bat')
+    {
+        alert('You Choosen 🏏 computer Chossen🏏, Game Draw');
+    }
+    else
+    {
+        if(value=='ball')
+        {
+            alert('You Choosen🏏 computer Choosen 🥎, You Won The Game ✅');
+        }else
+        {
+            if(value=='stumps')
+            {
+                alert('you Choosen 🏏 Computer Choosen ⟰, Computer Won The Game❌');
+            }
+        }     
+    }
+    ">Bat</button>
+
+    <button onclick="
+    var option=['bat','ball','stumps'];
+    var randomNumber=Math.floor(Math.random()*3);
+    var value=option[randomNumber];
+    if(value ==='ball')
+    {
+        alert('You Choosen 🥎 Computer Choosen 🥎,Game Was Draw');
+    }
+    else
+    {
+        if(value==='bat')
+        {
+            alert('you Choosen 🥎 computer choosen 🏏, Computer Won The game❌');
+        }else
+        {
+            if(value=='stumps')
+            {
+                alert('you choosen 🥎 computer choosen ⟰, You Won the game✅');
+            }
+        }     
+    }
+    ">Ball</button>
+    <button onclick="
+    var option=['bat','ball','stumps'];
+    var randomNumber=Math.floor(Math.random()*3);
+    var value=option[randomNumber];
+    if(value ==='stumps')
+    {
+        alert('you choosen ⟰ computer choosen ⟰,Game was Draw');
+    }
+    else
+    {
+        if(value=='ball')
+        {
+            alert('you choosen ⟰ computer choosen 🥎,Computer Won The Game❌');
+        }else
+        {
+            if(value=='bat')
+            {
+                alert('you choosen ⟰ computer choosen 🏏,you Won The Game✅');
+            }
+        }     
+    }
+    ">Stump</button>
+    <h1 style="color: rgb(234, 8, 181);"><span style="background-color: aliceblue;">click the above Buttons to play the game</span></h1>
+    <script></script>
+</body>
+</html>
